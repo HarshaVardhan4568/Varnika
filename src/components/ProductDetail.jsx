@@ -12,6 +12,7 @@ import fit7 from "../assets/products/fit7.jpeg";
 import fit8 from "../assets/products/fit8.jpeg";
 import fit9 from "../assets/products/fit9.jpeg";
 import fit10 from "../assets/products/fit10.jpeg";
+import fit11 from "../assets/products/fit11.jpeg";
 
 const products = [
   {
@@ -82,6 +83,13 @@ const products = [
     name: "White Classic Lehanga",
     price: "₹7,499",
     image: fit10,
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    id: 11,
+    name: "White Classic Lehanga",
+    price: "₹9,999",
+    image: fit11,
     sizes: ["S", "M", "L", "XL"],
   },
 ];

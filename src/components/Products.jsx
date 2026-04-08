@@ -9,6 +9,7 @@ import fit7 from "../assets/products/fit7.jpeg";
 import fit8 from "../assets/products/fit8.jpeg";
 import fit9 from "../assets/products/fit9.jpeg";
 import fit10 from "../assets/products/fit10.jpeg";
+import fit11 from "../assets/products/fit11.jpeg";
 
 const products = [
   {
@@ -28,49 +29,55 @@ const products = [
     name: "Lavender Designer Lehanga",
     price: "₹9,999",
     image: fit3,
-    },
-    {
-        id: 4,
-        name: "Sun Shine Festive Lehanga",
-        price: "₹8,499",
-        image: fit4,
-    },
-    {
-        id: 5,
-        name: "Haldi heritage lehanga",
-        price: "₹7,299",
-        image: fit5,
-    },
-    {
-        id: 6,
-        name: "Wine Gold Elegance Lehanga",
-        price: "₹9,999",
-        image: fit6,
-    },
-    {
-        id: 7,
-        name: "Saffron glow Bridal Lehanga",
-        price: "₹9,999",
-        image: fit7,
-    },
-    {
-        id: 8,
-        name: "Ruby Heritage Bridal Lehanga ",
-        price: "₹11,999",
-        image: fit8,
-    },
-    {
-        id: 9,
-        name: "Mehendi Grace Anarkali",
-        price: "₹6,499",
-        image: fit9,
-    },
-    {
-        id: 10,
-        name: "White Classic Lehanga",
-        price: "₹7,499",
-        image: fit10,
-      },
+  },
+  {
+    id: 4,
+    name: "Sun Shine Festive Lehanga",
+    price: "₹8,499",
+    image: fit4,
+  },
+  {
+    id: 5,
+    name: "Haldi heritage lehanga",
+    price: "₹7,299",
+    image: fit5,
+  },
+  {
+    id: 6,
+    name: "Wine Gold Elegance Lehanga",
+    price: "₹9,999",
+    image: fit6,
+  },
+  {
+    id: 7,
+    name: "Saffron glow Bridal Lehanga",
+    price: "₹9,999",
+    image: fit7,
+  },
+  {
+    id: 8,
+    name: "Ruby Heritage Bridal Lehanga ",
+    price: "₹11,999",
+    image: fit8,
+  },
+  {
+    id: 9,
+    name: "Mehendi Grace Anarkali",
+    price: "₹6,499",
+    image: fit9,
+  },
+  {
+    id: 10,
+    name: "White Classic Lehanga",
+    price: "₹7,499",
+    image: fit10,
+  },
+  {
+    id: 11,
+    name: "Royal Blue Lehanga",
+    price: "₹9,999",
+    image: fit11,
+  },
 ];
 
 function Products() {
