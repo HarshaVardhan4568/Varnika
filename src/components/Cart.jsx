@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 function Cart() {
   const { cart, removeFromCart } = useContext(CartContext);
 
-  const phone = "917793971950"; // your WhatsApp number
+  const phone = "917396979356"; // your WhatsApp number
 
   // 💰 Calculate total
   const total = cart.reduce((acc, item) => {
