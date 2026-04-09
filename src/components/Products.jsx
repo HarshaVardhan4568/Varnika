@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+
 import fit1 from "../assets/products/fit1.jpeg";
 import fit2 from "../assets/products/fit2.jpeg";
 import fit3 from "../assets/products/fit3.jpeg";
@@ -16,9 +17,9 @@ const products = [
   { id: 2, name: "Royal Purple Lehenga", price: "₹9,999", image: fit2 },
   { id: 3, name: "Lavender Designer Lehanga", price: "₹9,999", image: fit3 },
   { id: 4, name: "Sun Shine Festive Lehanga", price: "₹8,499", image: fit4 },
-  { id: 5, name: "Haldi heritage lehanga", price: "₹7,299", image: fit5 },
+  { id: 5, name: "Haldi Heritage Lehanga", price: "₹7,299", image: fit5 },
   { id: 6, name: "Wine Gold Elegance Lehanga", price: "₹9,999", image: fit6 },
-  { id: 7, name: "Saffron glow Bridal Lehanga", price: "₹9,999", image: fit7 },
+  { id: 7, name: "Saffron Glow Bridal Lehanga", price: "₹9,999", image: fit7 },
   {
     id: 8,
     name: "Ruby Heritage Bridal Lehanga",
@@ -36,15 +37,15 @@ function Products() {
   return (
     <div
       id="collection"
-      className="w-full pt-24 px-10 md:px-16 lg:px-24 py-14 bg-white"
+      className="bg-white w-full pt-20 px-4 md:px-10 lg:px-20 pb-16"
     >
       {/* TITLE */}
-      <h2 className="text-3xl text-center mb-12 font-semibold tracking-wide">
+      <h2 className="text-2xl md:text-3xl text-center mb-10 font-semibold tracking-wide">
         Our Collection
       </h2>
 
       {/* GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
         {products.map((item) => (
           <div
             key={item.id}
@@ -54,7 +55,7 @@ function Products() {
             hover:-translate-y-2 hover:shadow-2xl"
           >
             {/* IMAGE */}
-            <div className="overflow-hidden rounded-xl bg-black flex items-center justify-center h-[300px]">
+            <div className="overflow-hidden rounded-xl bg-black flex items-center justify-center h-[220px] sm:h-[260px] md:h-[300px]">
               <img
                 src={item.image}
                 alt={item.name}
@@ -63,10 +64,14 @@ function Products() {
             </div>
 
             {/* DETAILS */}
-            <div className="px-2 pt-4 pb-2">
-              <h3 className="text-sm font-medium text-gray-800">{item.name}</h3>
+            <div className="px-2 pt-3 pb-3">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-800">
+                {item.name}
+              </h3>
 
-              <p className="text-[#7B1E3A] font-semibold mt-1">{item.price}</p>
+              <p className="text-[#7B1E3A] font-semibold mt-1 text-sm">
+                {item.price}
+              </p>
             </div>
           </div>
         ))}
