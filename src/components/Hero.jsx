@@ -1,37 +1,21 @@
 import { motion } from "framer-motion";
-import leftFlower from "../assets/left-flower.png";
-import rightFlower from "../assets/right-flower.png";
 
 function Hero() {
   return (
     <div className="relative h-screen flex items-center justify-center bg-[#450719] text-white text-center overflow-hidden">
-      {/* 🌸 LEFT FLOWER */}
-      <img
-        src={leftFlower}
-        alt=""
-        className="absolute left-0 top-1/ h-[250px] md:h-[1000px] opacity-80 pointer-events-none"
-      />
-
-      {/* 🌸 RIGHT FLOWER */}
-      <img
-        src={rightFlower}
-        alt=""
-        className="absolute right-0 bottom-1/ h-[250px] md:h-[900px] opacity-80 pointer-events-none"
-      />
-
-      {/* GLOW EFFECT */}
+      {/* ✨ SOFT GLOW */}
       <div className="absolute w-72 h-72 bg-white opacity-10 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
       <div className="absolute w-72 h-72 bg-white opacity-10 rounded-full blur-3xl bottom-10 right-10 animate-pulse"></div>
 
       {/* CONTENT */}
       <motion.div
-        className="relative z-10"
+        className="relative z-10 px-4"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-4xl md:text-6xl font-bold"
+          className="text-3xl md:text-6xl font-bold leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
